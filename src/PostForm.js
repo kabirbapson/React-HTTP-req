@@ -19,12 +19,12 @@ class PostForm extends Component {
     submitHandler = e => {
         e.preventDefault()
         console.log(this.state)
-        axios.post('https://jsonplaceholder.typicode.com/postss', this.state)
+        axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
             .then(resp => {
                 console.log(resp)
             })
             .catch(err => {
-                console.log(err)
+                console.log(err, 'error posting data')
             })
     }
 
