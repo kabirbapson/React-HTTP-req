@@ -1,7 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-import PostList from './PostList';
-import PostForm from './PostForm';
+import logo from "./logo.svg";
+import "./App.css";
+import PostList from "./PostList";
+import PostForm from "./PostForm";
 
 function App() {
   return (
