@@ -1,13 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import PostList from "./PostList";
-import PostForm from "./PostForm";
-import TestObjects from "./TestObjects";
+import YbTest from "./YbTest";
 
 function App() {
   return (
     <div className="App">
-      <TestObjects />
+      <YbTest />
+      {/* <TestObjects /> */}
       {/* <PostForm />
       <PostList /> */}
     </div>
