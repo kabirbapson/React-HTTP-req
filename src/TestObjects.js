@@ -9,7 +9,7 @@ function TestObjects() {
       setPost(resp.data.slice(0, 10));
     });
   }, []);
-console.log(post)
+  console.log(post);
   return (
     <div>
       {post.length ? post.map((pos) => <p>{pos.title}</p>) : <p>ehh</p>}
