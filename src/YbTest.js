@@ -9,13 +9,14 @@ function YbTest() {
     { id: 1, pass: "1abc" },
     { id: 4, pass: "4abc" },
   ];
+    
     for (let i = 0; i < myObj.length; i++) {
         const element = myObj[i];
         // console.log(element)
     }
-    const lett = myObj.forEach(e => console.log(e.id + 10))
-    console.log(lett)
-    let hd = myObj.map(a => Math.floor(Math.sqrt(a.id) * 10))
+    // const lett = myObj.forEach(e => console.log(e.id + 10))
+    // console.log(lett)
+    // let hd = myObj.map(a => Math.floor(Math.sqrt(a.id) * 10))
     // console.log(hd)
   let cities = [
     { name: "Los Angeles", population: 3792621 },
