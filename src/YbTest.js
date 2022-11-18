@@ -9,26 +9,26 @@ function YbTest() {
     { id: 1, pass: "1abc" },
     { id: 4, pass: "4abc" },
   ];
-    
-    for (let i = 0; i < myObj.length; i++) {
-        const element = myObj[i];
-        // console.log(element)
-    }
-    // const lett = myObj.forEach(e => console.log(e.id + 10))
-    // console.log(lett)
-    // let hd = myObj.map(a => Math.floor(Math.sqrt(a.id) * 10))
-    // console.log(hd)
+
+  for (let i = 0; i < myObj.length; i++) {
+    const element = myObj[i];
+    // console.log(element)
+  }
+  // const lett = myObj.forEach(e => console.log(e.id + 10))
+  // console.log(lett)
+  // let hd = myObj.map(a => Math.floor(Math.sqrt(a.id) * 10))
+  // console.log(hd)
   let cities = [
     { name: "Los Angeles", population: 3792621 },
     { name: "New York", population: 8175133 },
-    { name: "Chicago", population: 2695598 } ,
+    { name: "Chicago", population: 2695598 },
     { name: "Houston", population: 2099451 },
     { name: "Philadelphia", population: 1526006 },
   ];
-    let city = cities.filter(a => a.name == 'Houston');
-    // console.log(city);
-    const vf = cities.map(city => city.name)
-    // console.log('dd',vf)
+  let city = cities.filter((a) => a.name == "Houston");
+  // console.log(city);
+  const vf = cities.map((city) => city.name);
+  // console.log('dd',vf)
   //   var boss = ["1", '1', "Avf", "ab", "hhdH", "Usa"];
   //   var bossy = myObj.sort((a, b) => {
   //     return a.id - b.id
