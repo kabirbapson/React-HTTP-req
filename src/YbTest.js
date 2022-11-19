@@ -6,7 +6,6 @@ function YbTest() {
   const myObj = [
     { id: 2, pass: "2abc" },
     { id: 3, pass: "3abc" },
-    
     { id: 1, pass: "1abc" },
     { id: 4, pass: "4abc" },
   ];
