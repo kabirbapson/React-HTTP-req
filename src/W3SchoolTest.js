@@ -16,7 +16,7 @@ export default function W3SchoolTest() {
   return (
     <div>
       <h1 id="id1">f</h1>
-      <h1 id="demo">f</h1>
+      <h1 id="demo">ff</h1>
       <h2 id="clicks">f</h2>
       <button onClick={onCLick}>Hit Me</button>
 
