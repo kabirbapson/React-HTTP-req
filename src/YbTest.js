@@ -27,6 +27,8 @@ function YbTest() {
   ];
   let city = cities.filter((a) => a.name == "Houston");
   // console.log(city);
+  var a = 10 * 5
+  alert(a)
   const vf = cities.map((city) => city.name);
   // console.log('dd',vf)
   //   var boss = ["1", '1', "Avf", "ab", "hhdH", "Usa"];
