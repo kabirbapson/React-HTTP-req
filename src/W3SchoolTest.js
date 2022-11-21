@@ -9,7 +9,14 @@ export default function W3SchoolTest() {
 var x = 'sdd'
   var   fruits = ["Banana", "Orange", "Apple", "Mango"];
 // fruits.forEach(fruit => console.log(fruit))
-console.log(fruits.join(' * '));
+  console.log('my',fruits);
+  fruits.unshift('kiwa', 'hab')
+  console.log('unnshhit' ,fruits);
+  fruits.shift()
+  console.log('shift',fruits);
+ fruits.pop(1)
+console.log('delete',fruits);
+  
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
