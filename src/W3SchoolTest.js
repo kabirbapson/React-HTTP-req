@@ -6,20 +6,10 @@ export default function W3SchoolTest() {
     // document.getElementById("demo").innerHTML =
     //  document.getElementById('id1').innerHTML = 85
   });
-  var cars = ["Saab", "Volvo", "BMW"];
-  for (let i = 0; i < cars.length; i = i + 1) {
-    console.log(i, cars[i]);
-  }
-  var fruits, text, fLen, i;
-  fruits = ["Banana", "Orange", "Apple", "Mango"];
-  fLen = fruits.length;
-
-  text = "<ul>";
-  for (i = 0; i < fLen; i++) {
-    text += "<li>" + fruits[i] + "</li>";
-  }
-  text += "</ul>";
-console.log(text);
+var x = 'sdd'
+  var   fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.forEach(fruit => console.log(fruit))
+console.log(fruits.join(' * '));
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
