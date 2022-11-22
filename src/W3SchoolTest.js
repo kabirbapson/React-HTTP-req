@@ -6,17 +6,15 @@ export default function W3SchoolTest() {
     // document.getElementById("demo").innerHTML =
     //  document.getElementById('id1').innerHTML = 85
   });
-var x = 'sdd'
-  var   fruits = ["Banana", "Orange", "Apple", "Mango"];
-// fruits.forEach(fruit => console.log(fruit))
-  console.log('my',fruits);
-  fruits.unshift('kiwa', 'hab')
-  console.log('unnshhit' ,fruits);
-  fruits.shift()
-  console.log('shift',fruits);
- fruits.pop(1)
-console.log('delete',fruits);
-  
+  var m = "ahijo, hdd, dddd";
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+  var x = fruits.sort(function (a,b) {
+    return 0.5 - Math.random();
+  });
+  console.log(x);
+  document.write(x.slice(', '))
+
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
