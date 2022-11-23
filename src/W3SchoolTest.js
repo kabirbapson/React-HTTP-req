@@ -27,6 +27,7 @@ export default function W3SchoolTest() {
       <button
         onClick={() => window.alert("dddj jjd")}
         // onClick={() =>
+        
         //   (document.getElementById("demo").innerHTML = Date().slice(2, 10))
         // }
       >
