@@ -7,7 +7,7 @@ export default function W3SchoolTest() {
     //  document.getElementById('id1').innerHTML = 85
   });
   var m = "ahijo, hdd, dddd";
-  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  var fruits = ["Banana", "ido", "Apple", "Mango"];
 
   var x = fruits.sort(function (a, b) {
     return 0.5 - Math.random();
