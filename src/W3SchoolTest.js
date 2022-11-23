@@ -15,9 +15,8 @@ export default function W3SchoolTest() {
 
   document.write(x.slice(", "));
 
-  
   return (
-    <div style={{ justifyContent:  "center", alignItems: "center" }}>
+    <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
       {/* {document.write('ddd')} */}
       {/* <h1 id="demo">ff</h1> */}
