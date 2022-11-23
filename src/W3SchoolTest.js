@@ -8,11 +8,14 @@ export default function W3SchoolTest() {
   });
   var m = "ahijo, hdd, dddd";
   var fruits = ["Banana", "ido", "Apple", "Mango"];
+  var x = fruits.filter((fruit) => fruit == "ido");
+  console.log(x);
 
-  var x = fruits.sort(function (a, b) {
-    return 0.5 - Math.random();
-  });
-
+  var numbers = [45, 4, 9, 16, 25];
+  var z = numbers.reduce(function (total, value) {
+    return total + value;
+  }, 2);
+  console.log(z);
   document.write(x.slice(", "));
 
   return (
