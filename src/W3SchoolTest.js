@@ -9,11 +9,11 @@ export default function W3SchoolTest() {
   var m = "ahijo, hdd, dddd";
   var fruits = ["Banana", "Orange", "Apple", "Mango"];
 
-  var x = fruits.sort(function (a,b) {
+  var x = fruits.sort(function (a, b) {
     return 0.5 - Math.random();
   });
-  console.log(x);
-  document.write(x.slice(', '))
+
+  document.write(x.slice(", "));
 
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
