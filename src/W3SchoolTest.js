@@ -7,17 +7,13 @@ export default function W3SchoolTest() {
     //  document.getElementById('id1').innerHTML = 85
   });
   var m = "ahijo, hdd, dddd";
-  var fruits = ["Banana", "ido", "Apple", "Mango"];
-  var x = fruits.filter((fruit) => fruit == "ido");
-  console.log(x);
+  var fruits = ["Banana", "ido", "Apple", "Mango", "ido"];
 
-  var numbers = [45, 4, 9, 16, 25];
-  var z = numbers.reduce(function (total, value) {
-    return total + value;
-  }, 2);
-  console.log(z);
-  document.write(x.slice(", "));
-
+  var d = new Date(100000000000);
+  console.log('ffff',d);
+  
+  var day = new Date("October 13, 2000")
+  console.log(day)
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
