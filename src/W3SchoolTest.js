@@ -10,10 +10,10 @@ export default function W3SchoolTest() {
   var fruits = ["Banana", "ido", "Apple", "Mango", "ido"];
 
   var d = new Date(100000000000);
-  console.log('ffff',d);
-  
-  var day = new Date("October 13, 2000")
-  console.log(day)
+  console.log("ffff", d);
+
+  var day = new Date("October 13, 2000");
+  console.log(day);
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
