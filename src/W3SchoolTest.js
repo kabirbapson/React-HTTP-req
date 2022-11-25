@@ -18,7 +18,7 @@ export default function W3SchoolTest() {
           (document.getElementById("id1").innerHTML = new Date().getMonth() + 1)
         }
       >
-        The time is?
+        The time is? 
       </button>
     </div>
   );
