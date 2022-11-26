@@ -6,13 +6,11 @@ export default function W3SchoolTest() {
     // document.getElementById("demo").innerHTML =
     //  document.getElementById('id1').innerHTML = 85
   });
-  var dd = new Date();
-  var d = "5" * 2;
-  console.log(typeof d);
+
+console.log(eval(2+3));
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
-
       <button
         onClick={() =>
           (document.getElementById("id1").innerHTML = new Date().getMonth() + 1)
