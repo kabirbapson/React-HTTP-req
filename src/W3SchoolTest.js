@@ -1,16 +1,14 @@
 import React from "react";
 
 export default function W3SchoolTest() {
- 
   class Car {
     constructor(made) {
-      this.carName = made
+      this.carName = made;
     }
   }
 
-  let make = new Car('Ford')
-console.log(make['carName'])
-
+  let make = new Car("Ford");
+  console.log(make["carName"]);
 
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
