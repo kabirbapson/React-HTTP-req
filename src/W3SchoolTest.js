@@ -6,7 +6,7 @@ export default function W3SchoolTest() {
       this.carName = brand;
     }
     present(x) {
-      return "i have a " + this.carName + x.make
+      return "i have a  " + this.carName + x.make
     }
   }
   class Made extends Car {
