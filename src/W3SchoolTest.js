@@ -2,7 +2,7 @@ import React from "react";
 
 export default function W3SchoolTest() {
   let x = 20;
-  console.log(typeof x)
+  console.log(typeof x);
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
