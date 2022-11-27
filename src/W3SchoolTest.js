@@ -1,28 +1,8 @@
 import React from "react";
 
 export default function W3SchoolTest() {
-  class Car {
-    constructor(brand) {
-      this.carName = brand;
-    }
-    present(x) {
-      return "i have a  " + this.carName + x.make
-    }
-  }
-  class Made extends Car {
-    constructor(brand, mode) {
-      super(brand);
-      this.mode = mode;
-    }
-    show() {
-      return this.carName + this.mode
-    }
-    make() {
-      return 'hwy'
-    }
-  }
-  const myCar = new Made('Ford', 'Mustang')
-  console.log(myCar.make())
+  let x = 20;
+  console.log(typeof x)
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
       <h1 id="id1">f</h1>
