@@ -3,7 +3,7 @@ import React from "react";
 export default function W3SchoolTest() {
   var x = 6;
   if (x == 7) {
-    console.log("fi r s t");
+    console.log("fi rs t");
   }
   return (
     <div style={{ justifyContent: "center", alignItems: "center" }}>
