@@ -8,6 +8,7 @@ class PostForm extends Component {
     this.state = {
       userId: "",
       title: "",
+      
       body: "",
     };
   }
@@ -16,7 +17,7 @@ class PostForm extends Component {
       [e.target.name]: e.target.value,
     });
   };
-  
+
   submitHandler = (e) => {
     e.preventDefault();
     console.log(this.state);
