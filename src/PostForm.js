@@ -8,7 +8,6 @@ class PostForm extends Component {
     this.state = {
       userId: "",
       title: "",
-      
       body: "",
     };
   }
