@@ -10,6 +10,7 @@ class PostForm extends Component {
       body: "",
 
     };
+    
   }
   
   changeHander = (e) => {
