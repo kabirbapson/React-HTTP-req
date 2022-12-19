@@ -10,7 +10,7 @@ class PostForm extends Component {
       body: "",
 
     };
-    
+
   }
   
   changeHander = (e) => {
@@ -21,6 +21,7 @@ class PostForm extends Component {
     });
   };
 
+  
   
   
   submitHandler = (e) => {
