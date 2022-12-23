@@ -5,25 +5,18 @@ class PostForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      
       userId: "",
       title: "",
       body: "",
-
     };
-
   }
-  
-  changeHander = (e) => {
 
+  changeHander = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
     });
   };
 
-  
-  
-  
   submitHandler = (e) => {
     e.preventDefault();
     console.log(this.state);
