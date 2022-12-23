@@ -16,8 +16,6 @@ class PostForm extends Component {
   
   changeHander = (e) => {
 
-    
-
     this.setState({
       [e.target.name]: e.target.value,
     });
