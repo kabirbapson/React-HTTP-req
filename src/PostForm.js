@@ -19,6 +19,7 @@ class PostForm extends Component {
   };
   
 
+  
   submitHandler = (e) => {
     e.preventDefault();
 
