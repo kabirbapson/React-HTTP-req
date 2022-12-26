@@ -8,6 +8,7 @@ class PostForm extends Component {
       userId: "",
       title: "",
 
+      
       body: "",
     };
   }
