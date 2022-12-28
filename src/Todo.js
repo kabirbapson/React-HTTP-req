@@ -10,37 +10,32 @@ export default function Todo() {
   //   }
   return (
     <>
-    
-        <>
-          <h1>
-            List of Tasks to stay <b>POOR</b>
-          </h1>
-          {tasks.map((task, index) => (
-            <h4 key={index}>{task}</h4>
-          ))}
-          <input
-            onKeyPress={(event) => {
-              if ((event = event.key === "Enter")) {
-                setTasks([...tasks, input]);
-                setInput("");
-                localStorage.setItem(
-                  "tasks",
-                  JSON.stringify([...tasks, input])
-                );
-              }
-            }}
-            onChange={(event) => {
-              setInput(event.target.value);
-            }}
-            value={input}
-          />
-          <br />
-          <br />
-          <button onClick={() => localStorage.removeItem("tasks")}>
-            Clear local Storage
-          </button>
-        </>
-     
+      <>
+        <h1>
+          List of Tasks to stay <b>POOR</b>
+        </h1>
+        {tasks.map((task, index) => (
+          <h4 key={index}>{task}</h4>
+        ))}
+        <input
+          onKeyPress={(event) => {
+            if ((event = event.key === "Enter")) {
+              setTasks([...tasks, input]);
+              setInput("");
+              localStorage.setItem("tasks", JSON.stringify([...tasks, input]));
+            }
+          }}
+          onChange={(event) => {
+            setInput(event.target.value);
+          }}
+          value={input}
+        />
+        <br />
+        <br />
+        <button onClick={() => localStorage.removeItem("tasks")}>
+          Clear local Storage
+        </button>
+      </>
     </>
   );
 }
