@@ -1,6 +1,7 @@
 import W3SchoolTest from "./W3SchoolTest";
 import "./App.css";
 import YbTest from "./YbTest";
+import Todo from "./Todo";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       {/* <TestObjects /> */}
       {/* <PostForm />
       <PostList /> */}
-      <W3SchoolTest />
+      {/* <W3SchoolTest /> */}
+      <Todo />
     </div>
   );
 }
