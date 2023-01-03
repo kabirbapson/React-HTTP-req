@@ -5,13 +5,14 @@ import { login, logout } from "./features/user";
 const Profile = () => {
   const [color, setColor] = React.useState("");
   const user = useSelector((state) => state.user.value);
+  const theme = useSelector((state) => state.theme.value);
   React.useEffect(() => {
-    const theme = useSelector((state) => state.theme.value);
     setColor(theme);
   }, []);
   console.log("color", color);
   console.log("theme", theme);
   const dispatch = useDispatch();
+  
   return (
     <div style={{ color: theme }}>
       <h2>Name: {user.name}</h2>
