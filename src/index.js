@@ -6,11 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { configureStore } from "@reduxjs/toolkit";
 import userSlice from "./features/user";
+import themeSlice from "./features/theme";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const store = configureStore({
   reducer: {
-    user: userSlice ,
+    user: userSlice,
+    theme:themeSlice
   },
 });
 root.render(
