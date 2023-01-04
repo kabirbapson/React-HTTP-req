@@ -12,9 +12,10 @@ const Profile = () => {
   console.log("color", color);
   console.log("theme", theme);
   
+  
   const dispatch = useDispatch();
 
-  
+
   return (
     <div style={{ color: theme }}>
       <h2>Name: {user.name}</h2>
