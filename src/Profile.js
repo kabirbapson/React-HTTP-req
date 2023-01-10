@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeTheme } from "./features/theme";
+
 import { login, logout } from "./features/user";
 const Profile = () => {
   const [color, setColor] = React.useState("");
@@ -9,7 +10,7 @@ const Profile = () => {
   React.useEffect(() => {
 
 
-    
+
     setColor(theme);
     
     
