@@ -10,8 +10,6 @@ const Profile = () => {
   React.useEffect(() => {
 
     setColor(theme);
-    
-    
 
   }, []);
   console.log("color", color);
