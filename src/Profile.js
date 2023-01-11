@@ -9,12 +9,10 @@ const Profile = () => {
   const theme = useSelector((state) => state.theme.value);
   React.useEffect(() => {
 
-
-
     setColor(theme);
     
     
-    
+
   }, []);
   console.log("color", color);
   console.log("theme", theme);
