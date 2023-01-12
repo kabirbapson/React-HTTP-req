@@ -8,7 +8,6 @@ const Profile = () => {
   const user = useSelector((state) => state.user.value);
   const theme = useSelector((state) => state.theme.value);
   React.useEffect(() => {
-
     setColor(theme);
 
   }, []);
