@@ -14,6 +14,7 @@ const Profile = () => {
   console.log("color", color);
 
   console.log("theme", theme);
+  
 
   const dispatch = useDispatch();
 
