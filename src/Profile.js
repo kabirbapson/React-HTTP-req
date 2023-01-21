@@ -23,6 +23,7 @@ const Profile = () => {
       <h2>Age: {user.age}</h2>
 
       <h2>Email: {user.email}</h2>
+      
 
       <button
         onClick={() => {
