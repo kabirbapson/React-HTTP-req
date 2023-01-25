@@ -11,7 +11,6 @@ try {
 } finally {
   console.log('final')
 }
-
 function App() {
   return (
     <div className="App">
