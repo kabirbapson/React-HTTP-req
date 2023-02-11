@@ -1,0 +1,30 @@
+p{
+    color: blue;
+    font-size: 190%;
+    border: 1px ridge lawngreen;
+    padding: 1cm
+}
+body{
+    background-color: rgb(245, 192, 192);
+}
+
+#p2 {
+    color: red;
+}
+.c2{
+    color: aqua;
+}
+
+h1{
+    /* text-align: center; */
+}
+div{
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 50%; */
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+   /* text-align: center; */
+}
