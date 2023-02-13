@@ -8,7 +8,6 @@ body {
   background-color: rgb(159, 24, 24);
 }
 
-
 #p2 {
   color: red;
 }
@@ -30,13 +29,14 @@ div {
   margin-right: auto;
   width: 40%;
   /* text-align: center; */
-
 }
 
-table, th, td{
-    border-spacing: 10px;
-    border: 1px solid blue;
-    border-collapse: collapse;
-    padding: 15px;
-    margin: 10px;
+table,
+th,
+td {
+  border-spacing: 10px;
+  border: 1px solid blue;
+  border-collapse: collapse;
+  padding: 15px;
+  margin: 10px;
 }
