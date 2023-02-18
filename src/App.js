@@ -3,26 +3,10 @@ import "./App.css";
 import YbTest from "./YbTest";
 import Todo from "./Todo";
 import Profile from "./Profile";
+import Login from "./page/Login";
 
-try {
-  console.log(first)
-} catch {
-  console.log('second')
-} finally {
-  console.log('final')
-}
 function App() {
-  return (
-    <div className="App">
-      {/* <YbTest /> */}
-      {/* <TestObjects /> */}
-      {/* <PostForm />
-      <PostList /> */}
-      {/* <W3SchoolTest /> */}
-      {/* <Todo /> */}
-      <Profile />
-    </div>
-  );
+  return <Login />;
 }
 
 export default App;
