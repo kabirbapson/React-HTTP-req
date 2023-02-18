@@ -4,8 +4,9 @@ import Input from '../components/Input'
 export default function Login() {
   return (
       <div>
+        
           
-          
+        
           <h1>Login Form</h1>
           
           <Input placeholder='Write your username' />
