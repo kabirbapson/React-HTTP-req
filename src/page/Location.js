@@ -14,6 +14,7 @@ export default function Location() {
       }
     );
   };
+  
   React.useEffect(() => {
     //   document.exitFullscreen()
 
