@@ -15,11 +15,7 @@ export default function Posts() {
 
   return (
     <div>
-          <h1>
-              {posts[0].title}
-              {posts[1].title}
-              {posts[2].title}
-              {posts[3].title}
+      <h1>
         {posts.map((item) => {
           return (
             <div>
