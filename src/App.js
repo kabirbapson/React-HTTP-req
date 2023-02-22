@@ -4,9 +4,10 @@ import YbTest from "./YbTest";
 import Todo from "./Todo";
 import Profile from "./Profile";
 import Login from "./page/Login";
+import Posts from "./page/Posts";
 
 function App() {
-  return <Login />;
+  return <Posts />;
 }
 
 export default App;
