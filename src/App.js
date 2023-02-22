@@ -5,9 +5,10 @@ import Todo from "./Todo";
 import Profile from "./Profile";
 import Login from "./page/Login";
 import Posts from "./page/Posts";
+import Location from "./page/Location";
 
 function App() {
-  return <Posts />;
+  return <Location />;
 }
 
 export default App;
