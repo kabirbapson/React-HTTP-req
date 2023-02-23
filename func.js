@@ -1,2 +1,2 @@
-var str = "hello";
-str.match("regexp");
+// console.log('object');
+console.log();
