@@ -1,1 +1,2 @@
-var str = 'hello'; str.match('regexp')
+var str = "hello";
+str.match("regexp");
