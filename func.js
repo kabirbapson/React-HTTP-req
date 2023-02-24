@@ -1,6 +1,1 @@
-console.log('object');
-console.log();
-
-
-
-
+console.log(console.log("object"));
