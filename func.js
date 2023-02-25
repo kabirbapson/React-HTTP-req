@@ -1,12 +1,12 @@
 class Person {
-    sayHello() {
-        console.log('Hello');
-    }
+  sayHello() {
+    console.log("Hello");
+  }
 }
-class Friend extends Person{
-    sayHello() {
-        console.log('Hey');
-    }
+class Friend extends Person {
+  sayHello() {
+    console.log("Hey");
+  }
 }
-var result = new Person()
-result.sayHello()
+var result = new Person();
+result.sayHello();
