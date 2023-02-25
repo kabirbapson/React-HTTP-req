@@ -1,70 +1,146 @@
-# Getting Started with Create React App
+# Lab Instructions: Building a Functional Program
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this exercise you'll get hands-on practice with functional programming concepts.
 
-## Available Scripts
+Note: It is best to follow these instructions in the Preview tab on the right side.
 
-In the project directory, you can run:
+> ### **Tips: Before you Begin**
+> #### To view your code and instructions side-by-side, select the following in your VSCode toolbar:
+> - View -> Editor Layout -> Two Columns
+> - To view this file in Preview mode, right click on this README.md file and `Open Preview`
+> - Select your code file in the code tree, which will open it up in a new VSCode tab.
+> - Drag your assessment code files over to the second column. 
+> - Great work! You can now see instructions and code at the same time. 
+> - Questions about using VSCode? Please see our support resources here:  
+    [Visual Studio Code on Coursera](https://www.coursera.org/learn/programming-with-javascript/supplement/roMvE/visual-studio-code-on-coursera)
+> #### **To run your JavaScript code**
+> - Select your JavaScript file
+> - Select the "Run Code" button in the upper right hand toolbar of VSCode. Ex: It looks like a triangular "Play" button. <br><br>
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Task 1: Build a function-based console log message generator
+In this exercise, your task is to code a function named `consoleStyler`, which accepts four parameters:
+- `color`
+- `background`
+- `fontSize`
+- `txt`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Inside the body of the consoleStyler() function declaration, you need to do the following:
 
-### `npm test`
+1. Create a new variable named message, and assign the following to it on the very first line inside the consoleStyler() function body.: 
+    ```
+    "%c" + txt;
+    ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Tip: Do not copy the 3 back ticks. These are used to format this document in the Preview tab.
 
-### `npm run build`
+2. Create a style variable and assign the following to it on the next line: 
+    ```
+    `color: ${color};`
+    ```
+	
+	Tip: The single backtick before color and after the semi-colon must be included.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Next, update the style variable (using the += operator) with the following code: 
+    ```
+    `background: ${background};`
+    ```
+	
+	Tip: The single backtick before background and after the semi-colon must be included.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Then, update the style variable (again, using the += operator) with the following code: 
+    ```
+    `font-size: ${fontSize};`
+    ```
+	
+	Tip: The single backtick before font-size and after the semi-colon must be included.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Finally, console log the message and style variables inside the `consoleStyler` function declaration.
 
-### `npm run eject`
+Hint: Be sure to use backticks (``) when updating your variable styles and not single ('') or double ("") quotes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Task 2: Build another console log message generator. 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Your task is to code another function, and name it `celebrateStyler()`. The function accepts a single parameter, reason, which should be of string data type.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Inside the function declaration's body, code the following: 
 
-## Learn More
+1. A new variable, named fontStyle, assigning it this code:
+    ```
+    "color: tomato; font-size: 50px";
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. On the next line, an if statement, verifying that `reason == "birthday"`. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Inside the body of the if block, code the following: 
+    ```
+    console.log(`%cHappy birthday`, fontStyle);
+    ```
 
-### Code Splitting
+4. On the next line, add an else if, and inside the parentheses, check that 
+    ```
+    reason == "champions"
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Inside the else if block, add this code: 
+    ```
+    console.log(`%cCongrats on the title!`, fontStyle);
+    ```
 
-### Analyzing the Bundle Size
+6. Add an else block, with the following code inside of it: 
+    ```
+    console.log(message, style);
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<br>
 
-### Making a Progressive Web App
+## Task 3: Run both the consoleStyler and the celebrateStyler functions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Invoke the consoleStyler() function, with the following arguments:
 
-### Advanced Configuration
+    - `'#1d5c63'`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    - `'#ede6db'`
 
-### Deployment
+    - `'40px'`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+    - `'Congrats!'`
 
-### `npm run build` fails to minify
+2. Next, invoke the celebrateStyler() function, with the following argument:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - `'birthday'`
+
+
+## Task 4: Insert a congratulatory and custom message
+
+1. Code another function, named `styleAndCelebrate()`.   
+The function declaration's body should consist of two function invocations:
+    ```
+    consoleStyler(color, background, fontSize, txt);  
+    celebrateStyler(reason);
+    ```
+
+
+2. Next, invoke the new function, using the following arguments:
+
+    - `'ef7c8e'`
+    - `'fae8e0'`
+    - `'30px'`
+    - `'You made it!'`
+    - `'champions'`
+
+<br>
+
+## Final Step: Let's submit your code!
+Nice work! To complete this assessment:
+1. Save your file through File -> Save 
+2. Select "Submit Assignment" in your Lab toolbar. 
+
+Your code will be autograded and return feedback shortly on the "Grades" tab.  
+You can also see your score in your Programming Assignment "My Submission" tab.
+<br> <br> 
+
+### Great job! Please continue to the next lesson.
