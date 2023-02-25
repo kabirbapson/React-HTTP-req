@@ -10,3 +10,4 @@ class Friend extends Person {
 }
 var result = new Person();
 result.sayHello();
+
