@@ -12,5 +12,6 @@ function handleClicks() {
   }
 }
 
+
 handleClicks();
 
