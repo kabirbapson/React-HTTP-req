@@ -10,5 +10,6 @@ function handleClicks() {
       break;
   }
 }
+
 handleClicks();
 
