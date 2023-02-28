@@ -1,4 +1,4 @@
-const timesTwo = require('./timesTwo');
+const timesTwo = require("./timesTwo");
 
 // Write the first test
 test("returns the number times 2", () => {
