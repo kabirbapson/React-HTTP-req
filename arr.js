@@ -4,14 +4,12 @@ function handleClicks() {
   switch (arr) {
     case arr[0]:
       console.log(arr[0]);
-          break;
-      
+      break;
+
     default:
       console.log(arr);
       break;
   }
 }
 
-
 handleClicks();
-
