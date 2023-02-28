@@ -1,4 +1,4 @@
-# Lab Instructions: Advanced JS Features
+# Lab Instructions: Unit Testing
  
 > ### **Tips: Before you Begin**
 > #### **To view your code and instructions side-by-side**, select the following in your VSCode toolbar:
@@ -12,87 +12,40 @@
 > #### **To run your JavaScript code**
 > - Select your JavaScript file
 > - Select the "Run Code" button in the upper right hand toolbar of VSCode.  
-> Ex: It looks like a triangular "Play" button. <br><br>
-
-<br>
-
-
-## Task: Iterate Over an Array
-
-In this exercise, you'll use the for....of loop to iterate over an array and to iterate over an object's own properties.  
+> Ex: It looks like a triangular "Play" button. 
 <br><br>
-**Step 1.** You are given an array of dairy products:  
 
-    
-    var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake']
-    
+## Task 1: Add Jest as a devDependency
 
-
-Create a function called `logDairy`. Within it, console log each of the items in the dairy array, using the for...of loop.   
-
-After you create this function, call it as `logDairy()` to see the output on the console.
-
-The expected output should be:
+Open terminal. Make sure that it's pointing to `jest-testing` directory.  
+Install the jest npm package using the npm install command and the --save-dev flag.  
+Verify that the installation was completed successfully by opening the package.json file and confirming that the "devDependencies" entry lists jest similar to the following:
 
 ```
-cheese
-sour cream
-milk
-yogurt
-ice cream
-milkshake
+"devDependencies": {
+    "jest": "^28.0.0"
+}
 ```
-
 <br>
-<b>Step 2.</b> You are given the following starter code:  
 
-```
-const animal = {
+## Task 2: Update the test entry
 
-canJump: true
-
-};
-
-const bird = Object.create(animal);
-
-bird.canFly = true;
-
-bird.hasFeathers = true;
-```
-
-Create a function called `birdCan`, within it, loop over the bird object's properties and console log each one, using the for...of loop. Finally call the function as `birdCan()` to see the output on the console.
-Remember, you need to console log both the key and the value of each of the bird object's properties.
-
-<br/>
-Expected output should be:
-
-```
-canFly: true
-hasFeathers: true
-```
-
-
-<br>
-<b>Step 3.</b> 
-    Using the same starter code as in task 2, create a function called `animalCan` and within it, loop over all the properties in both the bird object and its prototype - the animal object - using the for...in loop. Finally call the function as `animalCan()` to see the output on the console.
-
-<br/><br/>
-Expected outout should be:
-
-```
-canFly: true
-hasFeathers: true
-canJump: true
-```
-
-
+In the package.json file, locate the "scripts" entry, and inside of it, update the test entry to `jest`.
 <br><br>
-## Final Step: Let's submit your code!
-Nice work! To complete this assessment:
-- Save your file through File -> Save 
-- Select "Submit Assignment" in your Lab toolbar. 
 
-Your code will be autograded and return feedback shortly on the "Grades" tab.  
-You can also see your score in your Programming Assignment "My Submission" tab.
-<br> <br> 
+## Task 3: Code the timesTwo function
+
+Open the timesTwo.js file and add a function named `timesTwo`. The function should take number as input and return the value 2 multiplied by the number.
+Export the timesTwo function as a module. 
+<br><br>
+
+## Task 4: Write the first test
+Code a test call with the following arguments: 
+1. The description that reads: "returns the number times 2". 
+2. The second argument should expect the call to the timesTwo function, when passed the number 10, to be 20.
+<br><br>
+
+## Task 5: Run the first test 
+With the terminal pointed at the `jest-testing` directory, run the test script using npm.
+
 
