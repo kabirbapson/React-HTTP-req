@@ -1,19 +1,19 @@
 // Given variables
 const dishData = [
   {
-    name: "Tuwo Miyar Kuka",
+    name: "Italian pasta",
     price: 9.55,
   },
   {
-    name: "Alelen Gero",
+    name: "Rice with veggies",
     price: 8.65,
   },
   {
-    name: "Garau Garau",
+    name: "Chicken with potatoes",
     price: 15.55,
   },
   {
-    name: "Kunun Wawa",
+    name: "Vegetarian Pizza",
     price: 6.45,
   },
 ];
@@ -33,32 +33,35 @@ function getPrices(taxBoolean) {
       console.log("You need to pass a boolean to the getPrices call!");
       return;
     }
-    console.log("Dish: ");
-    console.log(dishData[i].name);
-    console.log("Price: ");
-    console.log(finalPrice);
+    console.log("Dish: ", dishData[i].name, "Price: ", finalPrice);
+    // console.log(dishData[i].name);
+    // console.log("Price: ", finalPrice);
+    // console.log(finalPrice);
   }
 }
+
 
 // Implement getDiscount()
 function getDiscount(taxBoolean, guests) {
-  getPrices(taxBoolean)
+  getPrices(taxBoolean);
   if (typeof guests == "number" && guests > 0 && guests < 30) {
-    var discount = 0
+    var discount = 0;
     if (guests < 5) {
-        discount = 5;
-    } else if(guests >=5) {
-        discount = 10;
-        console.log( 'Discount is: $' + discount);
-    } 
-    else {
-        console.log('The second argument must be a number between 0 and 30');
-    }
+      discount = 5;
+      console.log("Discount is: $" + discount);
 
-    return true;
+    } else if (guests >= 5) {
+      discount = 10;
+      console.log("Discount is: $" + discount);
+
+    } else {
+      console.log("Discount is: $" + discount);
+    }
   } else {
+    console.log("The second argument must be a number between 0 and 30");
   }
 }
+
 // Call getDiscount()
-getDiscount(true, 2)
-getDiscount(false, 10)
+getDiscount(true, 3);
+// getDiscount(false, 10);
