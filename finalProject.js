@@ -41,6 +41,7 @@ function getPrices(taxBoolean) {
 }
 
 
+
 // Implement getDiscount()
 function getDiscount(taxBoolean, guests) {
   getPrices(taxBoolean);
