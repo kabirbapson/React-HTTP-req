@@ -48,7 +48,7 @@ function getDiscount(taxBoolean, guests) {
     var discount = 0;
     if (guests < 5) {
       discount = 5;
-      
+
       console.log("Discount is: $" + discount);
     } else if (guests >= 5) {
       discount = 10;
@@ -56,6 +56,7 @@ function getDiscount(taxBoolean, guests) {
     } else {
       console.log("Discount is: $" + discount);
     }
+    
   } else {
     console.log("The second argument must be a number between 0 and 30");
   }
