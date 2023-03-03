@@ -38,6 +38,7 @@ function getPrices(taxBoolean) {
     // console.log("Price: ", finalPrice);
     // console.log(finalPrice);
   }
+  
 }
 
 // Implement getDiscount()
