@@ -33,8 +33,6 @@ export const timeConvert = (k: string, m: number) => {
   let minutes = (hours - rhours) * 60;
   let rminutes = Math.round(minutes);
 
-  
-  
 
   switch (k) {
     case 'm':
