@@ -61,6 +61,7 @@ const PointMouseLogger = () => {
       }
     />
   );
+     
 };
 
 function App() {
