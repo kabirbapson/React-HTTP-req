@@ -69,7 +69,8 @@ function App() {
       <header className="Header">Little Lemon Restaurant 🍕</header>
       <PanelMouseLogger />
       <PointMouseLogger />
-    </div>
+      </div>
+      
   );
 }
 
