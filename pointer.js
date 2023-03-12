@@ -53,7 +53,8 @@ const PointMouseLogger = () => {
   // The below if statement can be removed after the render props pattern is implemented
   return (
     <MousePosition
-      render={({ mousePosition }) => (
+          render={({ mousePosition }) => (
+              
         <p>
           ({mousePosition.x}, {mousePosition.y})
         </p>)
