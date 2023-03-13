@@ -32,6 +32,7 @@ describe("Feedback Form", () => {
     const rangeInput = screen.getByLabelText(/Score:/);
     fireEvent.change(rangeInput, { target: { value: score } });
 
+    
     const submitButton = screen.getByRole("button");
     fireEvent.click(submitButton);
 
