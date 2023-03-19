@@ -24,6 +24,7 @@ describe("Feedback Form", () => {
   });
 
     
+  
 
   test("User is able to submit the form if the score is higher than 5, without additional feedback", () => {
     const score = "9";
@@ -34,7 +35,7 @@ describe("Feedback Form", () => {
     fireEvent.change(rangeInput, { target: { value: score } });
 
     
-    
+
 
       
     const submitButton = screen.getByRole("button");
