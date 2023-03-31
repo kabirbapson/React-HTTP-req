@@ -22,6 +22,7 @@ describe("Feedback Form", () => {
       comment,
     });
   });
+
   
 
   test("User is able to submit the form if the score is higher than 5, without additional feedback", () => {
