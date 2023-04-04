@@ -20,6 +20,7 @@ describe("Feedback Form", () => {
     expect(handleSubmit).toHaveBeenCalledWith({
       score,
       comment,
+      
     });
   });
   
