@@ -14,10 +14,11 @@ describe("Feedback Form", () => {
     const textArea = screen.getByLabelText(/Comments:/);
     fireEvent.change(textArea, { target: { value: comment } });
 
+    
     const submitButton = screen.getByRole("button");
     fireEvent.click(submitButton);
 
-    
+
     expect(handleSubmit).toHaveBeenCalledWith({
       score,
       comment,
