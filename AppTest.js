@@ -12,6 +12,8 @@ describe("Feedback Form", () => {
     fireEvent.change(rangeInput, { target: { value: score } });
 
     
+    
+
     const textArea = screen.getByLabelText(/Comments:/);
     fireEvent.change(textArea, { target: { value: comment } });
 
