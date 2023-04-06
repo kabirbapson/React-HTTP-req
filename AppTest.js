@@ -17,7 +17,6 @@ describe("Feedback Form", () => {
     const submitButton = screen.getByRole("button");
     fireEvent.click(submitButton);
 
-    
     expect(handleSubmit).toHaveBeenCalledWith({
       score,
       comment,
