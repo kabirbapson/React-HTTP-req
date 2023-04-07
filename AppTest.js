@@ -17,11 +17,13 @@ describe("Feedback Form", () => {
     const submitButton = screen.getByRole("button");
     fireEvent.click(submitButton);
 
+    
     expect(handleSubmit).toHaveBeenCalledWith({
       score,
       comment,
     });
   });
+
 
   
   test("User is able to submit the form if the score is higher than 5, without additional feedback", () => {
