@@ -14,6 +14,11 @@ function App() {
         placeholder="Fname"
         onChange={(e) => setFName(e.target.value)}
       />
+      <input
+        value={lName}
+        placeholder="Lname"
+        onChange={(e) => setLName(e.target.value)}
+      />
       <button onClick={() => {}}>Get Time</button>
     </div>
   );
