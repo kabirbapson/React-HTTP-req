@@ -4,6 +4,9 @@ import "./App.css";
 function App() {
   const [fName, setFName] = useState("");
   const [lName, setLName] = useState("");
+
+  const updateFName = (e) => setFName(e.target.value);
+  const updateLName = (e) => setLName(e.target.value);
   return (
     <div className="App">
       <h1>
@@ -12,13 +15,9 @@ function App() {
       <input
         value={fName}
         placeholder="Fname"
-        onChange={(e) => setFName(e.target.value)}
+        onChange={updateFName}
       />
-      <input
-        value={lName}
-        placeholder="Lname"
-        onChange={(e) => setLName(e.target.value)}
-      />
+      <input value={lName} placeholder="Lname" onChange={updateLName} />
       <button onClick={() => {}}>Get Time</button>
     </div>
   );
