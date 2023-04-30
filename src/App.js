@@ -7,22 +7,17 @@ function App() {
   const updateFName = (e) => {
     const { name, value } = e.target;
 
-    setNames(prevState => {
-      if (name == 'fname') {
-        return {
-          fname: value,
-          lname:prevState.lname
-        }
-      } else if (name == 'lname') {
-        return {
-          lname: value,
-          fname:prevState.fname
-        }
-      }
-      
+    setNames((prevState) => {
+      return {
+        ...prevState,
+        [name]: value,
+      };
     });
   };
 
+  const arr = [10, 20, 30, 40, 50];
+  const find = arr.findIndex((x) => x === 20);
+  console.log(find);
   return (
     <div className="App">
       <h1>
