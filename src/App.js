@@ -5,29 +5,41 @@ function App() {
   const [names, setNames] = useState({ fname: "1", lname: "2" });
 
   const updateFName = (e) => {
-    console.log(names);
+    const { name, value } = e.target;
 
-    const firstname = e.target.value;
-    setNames({
-      ...names,
-      fname: firstname,
+    setNames(prevState => {
+      if (name == 'fname') {
+        return {
+          fname: value,
+          lname:prevState.lname
+        }
+      } else if (name == 'lname') {
+        return {
+          lname: value,
+          fname:prevState.fname
+        }
+      }
+      
     });
   };
-  const updateLName = (e) => {
-    console.log(names);
-    const lastName = e.target.value;
-    setNames({
-      ...names,
-      lName: lastName,
-    });
-  };
+
   return (
     <div className="App">
       <h1>
         time is {names.fname} {names.lname}{" "}
       </h1>
-      <input value={names.fname} placeholder="Fname" onChange={updateFName} />
-      <input value={names.lname} placeholder="Lname" onChange={updateLName} />
+      <input
+        value={names.fname}
+        name="fname"
+        placeholder="Fname"
+        onChange={updateFName}
+      />
+      <input
+        value={names.lname}
+        name="lname"
+        placeholder="Lname"
+        onChange={updateFName}
+      />
       <button onClick={() => console.log(names)}>Get Time</button>
     </div>
   );
