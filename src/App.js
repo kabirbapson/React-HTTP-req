@@ -2,23 +2,33 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [fName, setFName] = useState("");
-  const [lName, setLName] = useState("");
+  const [names, setNames] = useState({ fname: "1", lname: "2" });
 
-  const updateFName = (e) => setFName(e.target.value);
-  const updateLName = (e) => setLName(e.target.value);
+  const updateFName = (e) => {
+    console.log(names);
+
+    const firstname = e.target.value;
+    setNames({
+      ...names,
+      fname: firstname,
+    });
+  };
+  const updateLName = (e) => {
+    console.log(names);
+    const lastName = e.target.value;
+    setNames({
+      ...names,
+      lName: lastName,
+    });
+  };
   return (
     <div className="App">
       <h1>
-        time is {fName} {lName}{" "}
+        time is {names.fname} {names.lname}{" "}
       </h1>
-      <input
-        value={fName}
-        placeholder="Fname"
-        onChange={updateFName}
-      />
-      <input value={lName} placeholder="Lname" onChange={updateLName} />
-      <button onClick={() => {}}>Get Time</button>
+      <input value={names.fname} placeholder="Fname" onChange={updateFName} />
+      <input value={names.lname} placeholder="Lname" onChange={updateLName} />
+      <button onClick={() => console.log(names)}>Get Time</button>
     </div>
   );
 }
