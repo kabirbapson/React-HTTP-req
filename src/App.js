@@ -15,6 +15,7 @@ function App() {
     });
   };
 
+  
   const arr = [10, 20, 30, 40, 50];
   const find = arr.findIndex((x) => x === 20);
   console.log(find);
