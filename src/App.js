@@ -16,6 +16,7 @@ function App() {
   };
 
 
+
   const arr = [10, 20, 30, 40, 50];
   const find = arr.findIndex((x) => x === 20);
   console.log(find);
@@ -24,7 +25,7 @@ function App() {
       <h1>
         time is {names.fname} {names.lname}{" "}
       </h1>
-      
+
       <input
         value={names.fname}
         name="fname"
