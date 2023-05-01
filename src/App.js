@@ -25,6 +25,7 @@ function App() {
       <h1>
         time is {names.fname} {names.lname}{" "}
       </h1>
+      
 
       <input
         value={names.fname}
