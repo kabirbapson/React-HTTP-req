@@ -36,7 +36,6 @@ function App() {
       <audio ref={audioRef} controls>
         Your browser does not support the audio element.
       </audio>
-        <input type="file"  id="" />
       <input
         type="file"
         accept="audio/*"
