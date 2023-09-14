@@ -4,7 +4,6 @@ import "./App.css";
 function App() {
   const audioRef = useRef(null);
   const fileInputRef = useRef(null);
-
   const handlePlay = () => {
     if (audioRef.current) {
       audioRef.current.play().catch((error) => {
