@@ -6,6 +6,7 @@ class PostForm extends Component {
     super(props);
     this.state = {
       userId: "",
+      
       title: "",
 
       body: "",
