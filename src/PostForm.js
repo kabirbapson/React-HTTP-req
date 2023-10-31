@@ -9,7 +9,6 @@ class PostForm extends Component {
 
       title: "",
 
-      
       body: "",
     };
   }
