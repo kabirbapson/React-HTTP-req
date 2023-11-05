@@ -10,11 +10,12 @@ class PostForm extends Component {
       title: "",
 
 
+      
       body: "",
     };
   }
 
-  
+
   
   changeHander = (e) => {
     this.setState({
