@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./App.css";
+import ImageUpload from "./components/ImageUpload";
 
 function App() {
   const audioRef = useRef(null);
@@ -20,27 +21,28 @@ function App() {
     }
   };
   return (
-    <div className="App">
-      <h1>time is</h1>
-      <div>
-        <h1>Audio Player</h1>
-        <audio ref={audioRef} controls>
-          Your browser does not support the audio element.
-        </audio>
-        <input
-          type="file"
-          accept="audio/*"
-          onChange={handleFileChange}
-          ref={fileInputRef}
-          style={{ display: "none" }}
-        />
-        <button onClick={handlePlay}>Play</button>
-        <button onClick={() => fileInputRef.current.click()}>
-          Select Audio File
-        </button>
-      </div>
-      <button onClick={handlePlay}>Get Time</button>
-    </div>
+    // <div className="App">
+    //   <h1>time is</h1>
+    //   <div>
+    //     <h1>Audio Player</h1>
+    //     <audio ref={audioRef} controls>
+    //       Your browser does not support the audio element.
+    //     </audio>
+    //     <input
+    //       type="file"
+    //       accept="audio/*"
+    //       onChange={handleFileChange}
+    //       ref={fileInputRef}
+    //       style={{ display: "none" }}
+    //     />
+    //     <button onClick={handlePlay}>Play</button>
+    //     <button onClick={() => fileInputRef.current.click()}>
+    //       Select Audio File
+    //     </button>
+    //   </div>
+    //   <button onClick={handlePlay}>Get Time</button>
+    // </div>
+    <ImageUpload />
   );
 }
 
