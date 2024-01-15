@@ -18,8 +18,6 @@ const ImageUpload = () => {
     formData.append("subject", "Image Attachment");
     formData.append("message", "This email contains an attached image.");
 
-    
-    
     axios
       .post("127.0.0.1:3000/sendmail", formData, {
         headers: {
@@ -35,6 +33,7 @@ const ImageUpload = () => {
     console.log("object");
   };
 
+  
   return (
     <div>
       <input type="file" onChange={handleImageSelect} />
