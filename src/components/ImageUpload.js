@@ -32,9 +32,8 @@ const ImageUpload = () => {
       });
     console.log("object");
   };
+  
 
-  
-  
   return (
     <div>
       <input type="file" onChange={handleImageSelect} />
