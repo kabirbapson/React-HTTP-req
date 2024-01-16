@@ -34,6 +34,7 @@ const ImageUpload = () => {
   };
 
   
+  
   return (
     <div>
       <input type="file" onChange={handleImageSelect} />
