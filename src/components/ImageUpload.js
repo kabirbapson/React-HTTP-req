@@ -32,6 +32,7 @@ const ImageUpload = () => {
       });
     console.log("object");
   };
+  
 
   return (
     <div>
