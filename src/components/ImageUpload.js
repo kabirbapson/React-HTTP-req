@@ -11,7 +11,7 @@ const ImageUpload = () => {
     }
   };
 
-  
+
   const handleSubmit = () => {
     const formData = new FormData();
     formData.append("image", selectedImage);
@@ -29,6 +29,7 @@ const ImageUpload = () => {
         console.log("Image sent successfully");
       })
       .catch((error) => {
+        
         console.error(error);
       });
     console.log("object");
