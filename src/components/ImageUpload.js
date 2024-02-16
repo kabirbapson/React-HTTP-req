@@ -12,6 +12,7 @@ const ImageUpload = () => {
   };
 
 
+  
   const handleSubmit = () => {
     const formData = new FormData();
     formData.append("image", selectedImage);
