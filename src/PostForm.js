@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 import React, { Component } from "react";
 class PostForm extends Component {
   constructor(props) {
@@ -13,7 +14,7 @@ class PostForm extends Component {
     };
   }
 
-  
+
   changeHander = (e) => {
     this.setState({
       [e.target.name]: e.target.value,
