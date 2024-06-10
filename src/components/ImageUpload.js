@@ -30,7 +30,8 @@ const ImageUpload = () => {
       })
       .catch((error) => {
         
-        console.error(error);
+        console.error(error); 
+        
       });
     console.log("object");
   };
